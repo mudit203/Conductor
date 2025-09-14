@@ -1,12 +1,63 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Prerequisites
 
-Currently, two official plugins are available:
+Before running this project, make sure you have the following installed:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Node.js](https://nodejs.org/) (version 16 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/mudit203/Conductor.git
+cd Conductor
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Start Development Server
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+### 4. Build for Production
+
+```bash
+npm run build
+```
+
+### 5. Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```
+Conductor/
+├── src/
+│   ├── components/
+│   │   ├── TableCloudscape.jsx    # Main data table component
+│   │   ├── OrgPage.jsx           # Organization detail page
+│   │   ├── EventPage.jsx         # Event detail page
+│   │   └── Navbar.jsx            # Navigation component
+│   ├── constants/
+│   │   ├── Organization.js       # Organization mock data
+│   │   └── Events.js            # Events mock data
+│   ├── App.jsx                  # Main application component
+│   ├── App.css                  # Global styles
+│   └── main.jsx                 # Application entry point
+├── public/                      # Static assets
+├── package.json                 # Dependencies and scripts
+└── README.md                   # Project documentation
+```
